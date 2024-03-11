@@ -18,8 +18,19 @@ npm install github:tam11a/helper
 
 Reverses the given string.
 
+
+In TypeScript:
+
 ```typescript
-import helper from "helper";
+import * as helper from "helper";
+
+console.log(helper.stringHelpers.reverse("hello")); // Output: 'olleh'
+```
+
+In JavaScript: 
+
+```javascript
+const helper = require("helper");
 
 console.log(helper.stringHelpers.reverse("hello")); // Output: 'olleh'
 ```
@@ -29,7 +40,7 @@ console.log(helper.stringHelpers.reverse("hello")); // Output: 'olleh'
 Counts the number of occurrences of a substring within a string.
 
 ```typescript
-import helper from "helper";
+import * as helper from "helper";
 
 console.log(helper.stringHelpers.count_substring("hello world hello", "hello")); // Output: 2
 ```
@@ -41,7 +52,7 @@ console.log(helper.stringHelpers.count_substring("hello world hello", "hello"));
 Deeply merges two objects.
 
 ```typescript
-import helper from "helper";
+import * as helper from "helper";
 
 const obj1 = { a: { b: 1 }, c: 2 };
 const obj2 = { a: { d: 3 }, e: 4 };
@@ -56,7 +67,7 @@ console.log(helper.arrayObjectHelpers.deep_merge(obj1, obj2)); // Output: { a: {
 Formats a given date object and converts it to the specified timezone.
 
 ```typescript
-import helper from "helper";
+import * as helper from "helper";
 
 const date = new Date();
 console.log(helper.dateTimeHelpers.format(date, "America/New_York")); // Output: '3/11/2024, 2:30:00 PM'
