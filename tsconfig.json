@@ -1,10 +1,8 @@
 {
 	"files": ["src/index.ts"],
-	"include": ["src/**/*"],
 	"compilerOptions": {
-		"target": "ES2015",
-		// "moduleResolution": "NodeNext",
-		"module": "ES2015",
+		"target": "es2015",
+		"module": "es2015",
 		"declaration": true,
 		"outDir": "./dist",
 		"noEmit": false,

@@ -1,4 +1,4 @@
-import helper from "./index";
+import helper from "./index.js";
 
 test("work with reverse string", () => {
 	expect(helper.stringHelpers.reverse("hello world")).toBe("dlrow olleh");
