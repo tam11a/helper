@@ -20,7 +20,9 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  default: () => src_default
+  arrayObjectHelpers: () => array_object_helper_exports,
+  dateTimeHelpers: () => datetime_helper_exports,
+  stringHelpers: () => string_helper_exports
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -83,10 +85,9 @@ function format(date, timeZone) {
     hour12: false
   });
 }
-
-// src/index.ts
-var src_default = {
-  stringHelpers: string_helper_exports,
-  arrayObjectHelpers: array_object_helper_exports,
-  dateTimeHelpers: datetime_helper_exports
-};
+// Annotate the CommonJS export names for ESM import in node:
+0 && (module.exports = {
+  arrayObjectHelpers,
+  dateTimeHelpers,
+  stringHelpers
+});

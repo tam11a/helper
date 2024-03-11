@@ -14,10 +14,10 @@ declare function reverse(str: string): string;
  */
 declare function count_substring(str: string, substr: string): number;
 
-declare const stringHelpers_count_substring: typeof count_substring;
-declare const stringHelpers_reverse: typeof reverse;
-declare namespace stringHelpers {
-  export { stringHelpers_count_substring as count_substring, stringHelpers_reverse as reverse };
+declare const stringHelper_count_substring: typeof count_substring;
+declare const stringHelper_reverse: typeof reverse;
+declare namespace stringHelper {
+  export { stringHelper_count_substring as count_substring, stringHelper_reverse as reverse };
 }
 
 /**
@@ -35,9 +35,9 @@ declare function deep_merge(object1: {
     [key: string]: any;
 };
 
-declare const arrayObjectHelpers_deep_merge: typeof deep_merge;
-declare namespace arrayObjectHelpers {
-  export { arrayObjectHelpers_deep_merge as deep_merge };
+declare const arrayObjectHelper_deep_merge: typeof deep_merge;
+declare namespace arrayObjectHelper {
+  export { arrayObjectHelper_deep_merge as deep_merge };
 }
 
 /**
@@ -49,15 +49,9 @@ declare namespace arrayObjectHelpers {
  */
 declare function format(date: Date, timeZone: string): string;
 
-declare const dateTimeHelpers_format: typeof format;
-declare namespace dateTimeHelpers {
-  export { dateTimeHelpers_format as format };
+declare const datetimeHelper_format: typeof format;
+declare namespace datetimeHelper {
+  export { datetimeHelper_format as format };
 }
 
-declare const _default: {
-    stringHelpers: typeof stringHelpers;
-    arrayObjectHelpers: typeof arrayObjectHelpers;
-    dateTimeHelpers: typeof dateTimeHelpers;
-};
-
-export { _default as default };
+export { arrayObjectHelper as arrayObjectHelpers, datetimeHelper as dateTimeHelpers, stringHelper as stringHelpers };
