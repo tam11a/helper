@@ -6,7 +6,7 @@
  * @returns {string} A string representing the formatted date and time in the specified timezone.
  */
 
-function format(date: Date, timeZone: string): string {
+export function format(date: Date, timeZone: string): string {
 	return date.toLocaleString("en-US", {
 		timeZone,
 		year: "numeric",
@@ -18,7 +18,3 @@ function format(date: Date, timeZone: string): string {
 		hour12: false,
 	});
 }
-
-module.exports = {
-	format,
-};

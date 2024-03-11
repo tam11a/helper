@@ -1,12 +1,10 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Reverses the given string.
  *
  * @param {string} str - The input string to be reversed.
  * @returns {string} The reversed string.
  */
-function reverse(str) {
+export function reverse(str) {
     return str.split("").reverse().join("");
 }
 /**
@@ -16,10 +14,6 @@ function reverse(str) {
  * @param {string} substr - The substring to count occurrences of.
  * @returns {number} The number of occurrences of the substring.
  */
-function count_substring(str, substr) {
+export function count_substring(str, substr) {
     return (str.match(new RegExp(substr, "g")) || []).length;
 }
-module.exports = {
-    reverse,
-    count_substring,
-};

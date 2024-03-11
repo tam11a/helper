@@ -4,7 +4,7 @@
  * @param {string} str - The input string to be reversed.
  * @returns {string} The reversed string.
  */
-function reverse(str: string): string {
+export function reverse(str: string): string {
 	return str.split("").reverse().join("");
 }
 
@@ -15,11 +15,6 @@ function reverse(str: string): string {
  * @param {string} substr - The substring to count occurrences of.
  * @returns {number} The number of occurrences of the substring.
  */
-function count_substring(str: string, substr: string): number {
+export function count_substring(str: string, substr: string): number {
 	return (str.match(new RegExp(substr, "g")) || []).length;
 }
-
-module.exports = {
-	reverse,
-	count_substring,
-};

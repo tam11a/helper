@@ -6,7 +6,7 @@
  * @returns {object} A new object containing the merged properties of the input objects.
  */
 
-function deep_merge(
+export function deep_merge(
 	object1: {
 		[key: string]: any;
 	},
@@ -46,7 +46,3 @@ function deep_merge(
 	}
 	return result;
 }
-
-module.exports = {
-	deep_merge,
-};

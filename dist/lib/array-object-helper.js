@@ -1,4 +1,3 @@
-"use strict";
 /**
  * Deeply merges two objects.
  *
@@ -6,8 +5,7 @@
  * @param {object} object2 - The second object to merge.
  * @returns {object} A new object containing the merged properties of the input objects.
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-function deep_merge(object1, object2) {
+export function deep_merge(object1, object2) {
     const result = Object.assign({}, object1);
     for (const key in object2) {
         if (typeof object2[key] === "object" &&
@@ -38,6 +36,3 @@ function deep_merge(object1, object2) {
     }
     return result;
 }
-module.exports = {
-    deep_merge,
-};

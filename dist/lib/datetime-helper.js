@@ -1,4 +1,3 @@
-"use strict";
 /**
  * Formats a given date object and converts it to the specified timezone.
  *
@@ -6,8 +5,7 @@
  * @param {string} timeZone - The timezone to convert the date to (e.g., 'America/New_York').
  * @returns {string} A string representing the formatted date and time in the specified timezone.
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-function format(date, timeZone) {
+export function format(date, timeZone) {
     return date.toLocaleString("en-US", {
         timeZone,
         year: "numeric",
@@ -19,6 +17,3 @@ function format(date, timeZone) {
         hour12: false,
     });
 }
-module.exports = {
-    format,
-};

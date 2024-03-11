@@ -1,14 +1,9 @@
-/**
- * Deeply merges two objects.
- *
- * @param {object} object1 - The first object to merge.
- * @param {object} object2 - The second object to merge.
- * @returns {object} A new object containing the merged properties of the input objects.
- */
-export declare function deep_merge(object1: {
-    [key: string]: any;
-}, object2: {
-    [key: string]: any;
-}): {
-    [key: string]: any;
+import * as stringHelpers from "./lib/string-helper";
+import * as arrayObjectHelpers from "./lib/array-object-helper";
+import * as dateTimeHelpers from "./lib/datetime-helper";
+declare const _default: {
+    stringHelpers: typeof stringHelpers;
+    arrayObjectHelpers: typeof arrayObjectHelpers;
+    dateTimeHelpers: typeof dateTimeHelpers;
 };
+export default _default;
