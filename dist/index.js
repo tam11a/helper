@@ -3,6 +3,7 @@
 // const arrayObjectHelpers = require("./lib/array-object-helper");
 // const dateTimeHelpers = require("./lib/datetime-helper");
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.deep_merge = void 0;
 /**
  * Deeply merges two objects.
  *
@@ -41,9 +42,9 @@ function deep_merge(object1, object2) {
     }
     return result;
 }
+exports.deep_merge = deep_merge;
 module.exports = {
-    // stringHelpers,
-    // arrayObjectHelpers,
-    // dateTimeHelpers,
-    deep_merge,
+// stringHelpers,
+// arrayObjectHelpers,
+// dateTimeHelpers,
 };

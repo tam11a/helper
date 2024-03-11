@@ -10,7 +10,7 @@
  * @returns {object} A new object containing the merged properties of the input objects.
  */
 
-function deep_merge(
+export function deep_merge(
 	object1: {
 		[key: string]: any;
 	},
@@ -55,6 +55,4 @@ module.exports = {
 	// stringHelpers,
 	// arrayObjectHelpers,
 	// dateTimeHelpers,
-
-	deep_merge,
 };
