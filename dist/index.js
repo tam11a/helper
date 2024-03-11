@@ -43,8 +43,7 @@ function deep_merge(object1, object2) {
 }
 module.exports = {
     // stringHelpers,
-    arrayObjectHelpers: {
-        deep_merge,
-    },
+    // arrayObjectHelpers,
     // dateTimeHelpers,
+    deep_merge,
 };
