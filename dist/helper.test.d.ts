@@ -1,1 +1,1 @@
-declare const helper: any;
+export {};

@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const helper = require("./index");
 test("work with reverse string", () => {
     expect(helper.stringHelpers.reverse("hello world")).toBe("dlrow olleh");
