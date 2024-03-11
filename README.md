@@ -7,7 +7,7 @@ Helper is a collection of utility functions for common tasks such as string mani
 You can install the library via npm:
 
 ```bash
-npm install @tam11a/helper
+npm install github:tam11a/helper
 ```
 
 ## Usage
@@ -18,20 +18,20 @@ npm install @tam11a/helper
 
 Reverses the given string.
 
-```javascript
-const { stringHelpers } = require('@tam11a/helper');
+```typescript
+import helper from "helper";
 
-console.log(stringHelpers.reverse('hello')); // Output: 'olleh'
+console.log(helper.stringHelpers.reverse("hello")); // Output: 'olleh'
 ```
 
 #### stringHelpers.count_substring(str, substr)
 
 Counts the number of occurrences of a substring within a string.
 
-```javascript
-const { stringHelpers } = require('@tam11a/helper');
+```typescript
+import helper from "helper";
 
-console.log(stringHelpers.count_substring('hello world hello', 'hello')); // Output: 2
+console.log(helper.stringHelpers.count_substring("hello world hello", "hello")); // Output: 2
 ```
 
 ### Array/Object Helpers
@@ -40,12 +40,12 @@ console.log(stringHelpers.count_substring('hello world hello', 'hello')); // Out
 
 Deeply merges two objects.
 
-```javascript
-const { arrayObjectHelpers} = require('@tam11a/helper');
+```typescript
+import helper from "helper";
 
 const obj1 = { a: { b: 1 }, c: 2 };
 const obj2 = { a: { d: 3 }, e: 4 };
-console.log(arrayObjectHelpers.deep_merge(obj1, obj2)); // Output: { a: { b: 1, d: 3 }, c: 2, e: 4 }
+console.log(helper.arrayObjectHelpers.deep_merge(obj1, obj2)); // Output: { a: { b: 1, d: 3 }, c: 2, e: 4 }
 
 ```
 
@@ -55,9 +55,9 @@ console.log(arrayObjectHelpers.deep_merge(obj1, obj2)); // Output: { a: { b: 1, 
 
 Formats a given date object and converts it to the specified timezone.
 
-```javascript
-const { dateTimeHelpers} = require('@tam11a/helper');
+```typescript
+import helper from "helper";
 
 const date = new Date();
-console.log(dateTimeHelpers.format(date, 'America/New_York')); // Output: '3/11/2024, 2:30:00 PM'
+console.log(helper.dateTimeHelpers.format(date, "America/New_York")); // Output: '3/11/2024, 2:30:00 PM'
 ```
