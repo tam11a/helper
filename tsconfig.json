@@ -3,7 +3,8 @@
 	"include": ["src/**/*"],
 	"compilerOptions": {
 		"target": "es2015",
-		"module": "CommonJS",
+		"moduleResolution": "NodeNext",
+		"module": "NodeNext",
 		"declaration": true,
 		"outDir": "./dist",
 		"noEmit": false,
