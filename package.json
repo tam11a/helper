@@ -2,6 +2,8 @@
   "name": "helper",
   "description": "Utilities helper library",
   "main": "src/index.ts",
+  "version": "1.0.0",
+  
   "scripts": {
     "build": "tsc",
     "test": "jest"

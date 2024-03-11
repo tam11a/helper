@@ -1,4 +1,4 @@
-const helper = require('./index');
+import helper from './index'
 
 test('work with reverse string', () => {
   expect(helper.stringHelpers.reverse('hello world')).toBe('dlrow olleh');
