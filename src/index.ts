@@ -50,13 +50,13 @@ function deep_merge(
 	return result;
 }
 
-module.exports = {
+// module.exports = {
+// 	deep_merge,
+// };
+
+export default {
+	// 	stringHelpers,
+	// 	arrayObjectHelpers,
+	// 	dateTimeHelpers,
 	deep_merge,
 };
-
-// export default {
-// 	stringHelpers,
-// 	arrayObjectHelpers,
-// 	dateTimeHelpers,
-// deep_merge,
-// };

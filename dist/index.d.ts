@@ -12,3 +12,7 @@ declare function deep_merge(object1: {
 }): {
     [key: string]: any;
 };
+declare const _default: {
+    deep_merge: typeof deep_merge;
+};
+export default _default;

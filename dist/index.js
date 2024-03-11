@@ -1,4 +1,3 @@
-"use strict";
 // import * as stringHelpers from "./lib/string-helper.js";
 // import * as arrayObjectHelpers from "./lib/array-object-helper.js";
 // import * as dateTimeHelpers from "./lib/datetime-helper.js";
@@ -40,12 +39,12 @@ function deep_merge(object1, object2) {
     }
     return result;
 }
-module.exports = {
+// module.exports = {
+// 	deep_merge,
+// };
+export default {
+    // 	stringHelpers,
+    // 	arrayObjectHelpers,
+    // 	dateTimeHelpers,
     deep_merge,
 };
-// export default {
-// 	stringHelpers,
-// 	arrayObjectHelpers,
-// 	dateTimeHelpers,
-// deep_merge,
-// };
