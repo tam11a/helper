@@ -1,9 +1,9 @@
-import * as stringHelpers from './lib/string-helper'
-import * as arrayObjectHelpers from './lib/array-object-helper'
-import * as dateTimeHelpers from './lib/datetime-helper'
+const stringHelpers = require("./lib/string-helper");
+const arrayObjectHelpers = require("./lib/array-object-helper");
+const dateTimeHelpers = require("./lib/datetime-helper");
 
-export default {
-  stringHelpers,
-  arrayObjectHelpers,
-  dateTimeHelpers,
+module.exports = {
+	stringHelpers,
+	arrayObjectHelpers,
+	dateTimeHelpers,
 };
