@@ -13,10 +13,10 @@ test("work with count substring", () => {
 test("work with date format", () => {
 	expect(
 		helper.dateTimeHelpers.format(
-			new Date(2024, 3, 11, 14, 30, 0),
+			new Date("2020-04-13T00:00:00.000+08:00"),
 			"America/New_York"
 		)
-	).toBe("4/11/2024, 04:30:00");
+	).toBe("4/12/2020, 12:00:00");
 });
 
 test("work with deep merge [Test Case: 1] [Only Object]", () => {
