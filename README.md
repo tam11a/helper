@@ -36,7 +36,7 @@ console.log(helper.stringHelpers.count_substring("hello world hello", "hello"));
 
 ### Array/Object Helpers
 
-#### deepMerge(object1, object2)
+#### arrayObjectHelpers.deepMerge(object1, object2)
 
 Deeply merges two objects.
 
